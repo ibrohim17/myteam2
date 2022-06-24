@@ -1,29 +1,5 @@
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/livvic-v13-latin-600.eot');
-  src: url('../fonts/livvic-v13-latin-600.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/livvic-v13-latin-600.woff2') format('woff2'),
-    url('../fonts/livvic-v13-latin-600.woff') format('woff'),
-    url('../fonts/livvic-v13-latin-600.ttf') format('truetype'),
-    url('../fonts/livvic-v13-latin-600.svg#Livvic') format('svg');
-}
-
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/livvic-v13-latin-700.eot');
-  src: url('../fonts/livvic-v13-latin-700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/livvic-v13-latin-700.woff2') format('woff2'),
-    url('../fonts/livvic-v13-latin-700.woff') format('woff'),
-    url('../fonts/livvic-v13-latin-700.ttf') format('truetype'),
-    url('../fonts/livvic-v13-latin-700.svg#Livvic') format('svg');
-}
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -48,28 +24,16 @@ body {
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-
-
 }
 
 .header-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .header-pages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -117,45 +81,26 @@ body {
   border-radius: 24px;
   width: 153px;
   height: 43px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.header-span:hover {
-  color: #fff;
-  background-color: #fff;
-  border: 2px solid #FFFFFF;
-  border-radius: 24px;
-  width: 153px;
-  height: 43px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .header-href-end {
-  color: #fff;
-  text-decoration: none;
+  padding: 8px 33px;
+  font-family: 'Livvic';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
+  color: #ffffff;
+  background-color: #014E56;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
 }
 
 .header-href-end:hover {
-  color: #002529;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 
@@ -165,18 +110,11 @@ body {
   padding-bottom: 250px;
   background-image: url("../images/disk1.png"), url("../images/disk2.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 710px) calc(50% + -68px), calc(50% + 389px) calc(50% + 250px);
+  background-position: calc(50% - 760px) calc(50% + -68px), calc(50% + 450px) calc(50% + 300px);
 }
 
 .header-top-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -211,15 +149,13 @@ body {
   padding-bottom: 140px;
   padding-top: 140px;
   background-color: #012F34;
-  background-image: url("../images/disk5.png");
+  background-image: url("../images/disk3.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 710px) bottom;
+  background-position: calc(50% + 760px) bottom;
 }
 
 
 .left-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -286,9 +222,10 @@ body {
   padding-bottom: 151px;
   padding-top: 140px;
   background-color: #004047;
-  background-image: url("../images/disk-2.png"), url("../images/disk4.png");
+  background-image: url("../images/disk4.png"), url("../images/disk5.png");
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 686px) calc(50% - 344px), calc(50% + 660px) bottom;
+  background-position: calc(50% - 686px) calc(50% - 350px), calc(50% + 660px) calc(50% + 395px);
+
 }
 
 .right-h2 {
@@ -321,7 +258,7 @@ body {
   height: 252px;
   background-image: url("../images/skopka.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: calc(50% + 0px) calc(50% - 100px);
 }
 
 .right-p {
@@ -346,15 +283,17 @@ body {
   line-height: 18px;
 }
 
-
+.right-img {
+  margin-top: 32px;
+}
 
 .header-bottom {
   padding-bottom: 40px;
   padding-top: 40px;
   background-color: #F67E7E;
-  background-image: url("../images/disk-4.png");
+  background-image: url("../images/disk6.png");
   background-repeat: no-repeat;
-  background-position: calc(50% - 660px), top;
+  background-position: calc(50% - 660px) calc(50% + 80px);
 }
 
 .bottom-div {
@@ -374,6 +313,26 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
+}
+
+.header-href-end-1 {
+  padding: 8px 33px;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012F34;
+  background-color: #f67e7e;
+  border: 2px solid #012F34;
+  border-radius: 24px;
+  text-decoration: none;
+}
+
+.header-href-end-1:hover {
+  color: #fff;
+  background-color:#012F34;
+  cursor: pointer;
 }
 
 .bottom-span {
@@ -449,8 +408,8 @@ body {
   text-decoration: none;
   color: #fff;
   display: inline-block;
-  margin-top: 53px;
-  margin-bottom: 33px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .footer-href:hover {
@@ -460,7 +419,6 @@ body {
 }
 
 .footer-href:nth-child(3n) {
-
   margin-left: 40px;
 }
 
@@ -473,7 +431,24 @@ body {
   list-style: none;
 }
 
+.footer-li-wrapper {
+  margin-top: -5px;
+  margin-left: 100px;
+}
+
+.footer-ul-li {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
 .footer-li {
+  margin-top: 35px;
+  list-style-type: none;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -494,6 +469,10 @@ body {
 
 .footer-hrefs {
   text-align: end;
+}
+
+.massengers-div {
+  margin-top: -11px;
 }
 
 .massengers:nth-child(2n) {
